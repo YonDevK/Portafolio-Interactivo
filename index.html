@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-card">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+                <button onclick="toggleDetails('details1')">Ver Más</button>
+                <div id="details1" class="details" style="display: none;">
+                    <p>Detalles adicionales sobre el proyecto 1.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+                <button onclick="toggleDetails('details2')">Ver Más</button>
+                <div id="details2" class="details" style="display: none;">
+                    <p>Detalles adicionales sobre el proyecto 2.</p>
+                </div>
+            </div>
+            <!-- Agrega más proyectos según sea necesario -->
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Agrega más habilidades según sea necesario -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
